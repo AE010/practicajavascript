@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular Descuento</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="calcular-descuento.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Calcular Descuento en Tienda</h1>
+        <form onsubmit="return calcularDescuento()">
+            <label for="total">Total de la Compra:</label>
+            <input type="number" id="total" step="0.01" required>
+            <button type="submit">Calcular Descuento</button>
+        </form>
+        <p id="resultadoDescuento"></p>
+    </div>
+</body>
+</html>

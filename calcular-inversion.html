@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular Inversión</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="calcular-inversion.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Calcular Inversión con Interés Mensual</h1>
+        <form onsubmit="return calcularInversion()">
+            <label for="capital">Ingrese su Capital:</label>
+            <input type="number" id="capital" step="0.01" required>
+            <button type="submit">Calcular Ganancia</button>
+        </form>
+        <p id="resultado"></p>
+    </div>
+</body>
+</html>

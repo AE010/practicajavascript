@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular Utilidad Anual</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="calcular-utilidad.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Calcular Utilidad Anual</h1>
+        <form onsubmit="return calcularUtilidad()">
+            <label for="salario">Salario Mensual:</label>
+            <input type="number" id="salario" step="0.01" required>
+            
+            <label for="fechaIngreso">Fecha de Ingreso:</label>
+            <input type="date" id="fechaIngreso" required>
+            
+            <button type="submit">Calcular Utilidad</button>
+        </form>
+        
+        <p id="resultadoUtilidad"></p>
+    </div>
+</body>
+</html>

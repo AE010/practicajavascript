@@ -1,0 +1,136 @@
+/* Paleta de Colores */
+:root {
+    --color-fondo: #afe7b3;
+    --color-principal: #28a745;
+    --color-secundario: #28a745;
+    --color-acento: #dc3545;
+    --color-texto: #212529;
+    --color-fondo-formulario: #e8e5e5;
+    --color-boton: #28a745;
+    --color-boton-hover: #0056b3;
+    --color-boton-destacado: #218838;
+    --color-boton-destacado-hover: #218838;
+    --color-sombra: rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos Generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+}
+
+h1 {
+    text-align: center;
+    color: var(--color-principal);
+    margin: 30px 0;
+    font-size: 2.5em;
+}
+
+/* Contenedor Principal */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: var(--color-fondo-formulario);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px var(--color-sombra);
+}
+
+/* Listas */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin: 20px 0;
+    text-align: center;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color-principal);
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+a:hover {
+    background-color: var(--color-principal);
+    color: #ffffff;
+}
+
+/* Formularios */
+form {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px var(--color-sombra);
+    margin: 20px auto;
+    max-width: 600px;
+    background-color: var(--color-fondo-formulario);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: var(--color-texto);
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="password"],
+textarea {
+    padding: 12px;
+    width: calc(100% - 24px); /* Ajusta el ancho para la alineación correcta */
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box; /* Asegura que el padding y border estén incluidos en el ancho total */
+}
+
+button {
+    padding: 12px 25px;
+    background-color: var(--color-boton);
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: var(--color-boton-hover);
+}
+
+/* Botones Destacados */
+button.destacado {
+    background-color: var(--color-boton-destacado);
+}
+
+button.destacado:hover {
+    background-color: var(--color-boton-destacado-hover);
+}
+
+/* Resultados */
+#resultado,
+#resultadoComisiones,
+#resultadoDescuento,
+#resultadoCalificacion,
+#resultadoEdad,
+#resultadoPalabras,
+#resultadoHorasExtras {
+    margin-top: 20px;
+    font-size: 18px;
+    color: var(--color-secundario);
+}

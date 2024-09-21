@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular Edad</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="calcular-edad.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Calcular Edad de una Persona</h1>
+        <form onsubmit="return calcularEdad()">
+            <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="fechaNacimiento" required>
+            <button type="submit">Calcular Edad</button>
+        </form>
+        <p id="resultadoEdad"></p>
+    </div>
+</body>
+</html>

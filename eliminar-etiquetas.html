@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliminar Etiquetas</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="eliminar-etiquetas.js" defer></script>
+    <style>
+        #html {
+            resize: none; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Eliminar Etiquetas</h1>
+        <form onsubmit="return eliminarEtiquetas()">
+            <label for="html">Ingrese HTML:</label>
+            <textarea id="html" rows="10" required></textarea>
+            <button type="submit">Limpiar HTML</button>
+        </form>
+        <p id="resultadoEtiquetas"></p>
+    </div>
+</body>
+</html>
